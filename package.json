@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-hope",
+  "version": "0.0.1",
+  "description": "Hope.UA ESLint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HopeUA/eslint-config-hope.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "hope.ua"
+  ],
+  "author": "Sergey Sadovoi <sergey@hope.ua>",
+  "license": "MIT"
+}
