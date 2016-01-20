@@ -16,7 +16,7 @@ React plugin
     
 Babel parser (for es6 code only)
 
-    npm install babel-eslint
+    npm install babel-eslint --save-dev
 
 ## Usage
 Create **.eslintrc** file
