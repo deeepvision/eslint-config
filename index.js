@@ -4,7 +4,8 @@ module.exports = {
         'hope/rules/best-practices',
         'hope/rules/strict',
         'hope/rules/variables',
-        'hope/rules/node'
+        'hope/rules/node',
+        'hope/rules/style'
     ],
     rules: {}
 };
