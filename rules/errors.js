@@ -2,17 +2,16 @@ module.exports = {
     rules: {
         // disallow trailing commas in object literals
         'comma-dangle': [2, 'never'],
-
         // disallow assignment in conditional expressions
         'no-cond-assign': [2, 'always'],
         // disallow use of console
         'no-console': 1,
         // disallow use of constant expressions in conditions
-        'no-constant-condition': 1,
+        'no-constant-condition': 2,
         // disallow control characters in regular expressions
         'no-control-regex': 2,
         // disallow use of debugger
-        'no-debugger': 1,
+        'no-debugger': 2,
         // disallow duplicate arguments in functions
         'no-dupe-args': 2,
         // disallow duplicate keys when creating object literals
@@ -26,7 +25,7 @@ module.exports = {
         // disallow assigning to the exception in a catch block
         'no-ex-assign': 2,
         // disallow double-negation boolean casts in a boolean context
-        'no-extra-boolean-cast': 0,
+        'no-extra-boolean-cast': 2,
         // disallow unnecessary parentheses
         'no-extra-parens': [2, 'functions'],
         // disallow unnecessary semicolons
@@ -47,15 +46,15 @@ module.exports = {
         'no-regex-spaces': 2,
         // disallow sparse arrays
         'no-sparse-arrays': 2,
+        // Avoid code that looks like two expressions but is actually one
+        'no-unexpected-multiline': 2,
         // disallow unreachable statements after a return, throw, continue, or break statement
         'no-unreachable': 2,
         // disallow comparisons with the value NaN
         'use-isnan': 2,
         // ensure JSDoc comments are valid
-        'valid-jsdoc': 0,
+        'valid-jsdoc': 2,
         // ensure that the results of typeof are compared against a valid string
-        'valid-typeof': 2,
-        // Avoid code that looks like two expressions but is actually one
-        'no-unexpected-multiline': 0
+        'valid-typeof': 2
     }
 };
