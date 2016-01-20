@@ -101,7 +101,7 @@ module.exports = {
         'react/react-in-jsx-scope': 2,
         // Restrict file extensions that may be required
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
-        'react/require-extension': [2, { extensions: ['.js', '.jsx']}],
+        'react/require-extension': [2, { extensions: ['.js', '.jsx'] }],
         // Prevent extra closing tags for components without children
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
         'react/self-closing-comp': 2,

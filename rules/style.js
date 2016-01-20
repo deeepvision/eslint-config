@@ -5,11 +5,11 @@ module.exports = {
         // disallow or enforce spaces inside of single line blocks
         'block-spacing': [2, 'always'],
         // enforce one true brace style
-        'brace-style': [2, '1tbs', {allowSingleLine: true}],
+        'brace-style': [2, '1tbs', { allowSingleLine: true }],
         // require camel case names
-        camelcase: [2, {properties: 'always'}],
+        camelcase: [2, { properties: 'always' }],
         // enforce spacing before and after comma
-        'comma-spacing': [2, {before: false, after: true}],
+        'comma-spacing': [2, { before: false, after: true }],
         // enforce one true comma style
         'comma-style': [2, 'last'],
         // disallow padding inside computed properties
@@ -27,11 +27,11 @@ module.exports = {
         // require identifiers to match the provided regular expression
         'id-match': 0,
         // this option sets a specific tab width for your code
-        indent: [2, 4, {SwitchCase: 1, VariableDeclarator: 1}],
+        indent: [2, 4, { SwitchCase: 1, VariableDeclarator: 1 }],
         // specify whether double or single quotes should be used in JSX attributes
         'jsx-quotes': [2, 'prefer-double'],
         // enforces spacing between keys and values in object literal properties
-        'key-spacing': [2, {beforeColon: false, afterColon: true}],
+        'key-spacing': [2, { beforeColon: false, afterColon: true }],
         // disallow mixed 'LF' and 'CRLF' as linebreaks
         'linebreak-style': [2, 'unix'],
         // enforces empty lines around comments
@@ -39,7 +39,7 @@ module.exports = {
         // specify the maximum depth that blocks can be nested
         'max-depth': 0,
         // specify the maximum length of a line in your program
-        'max-len': [2, 80, 4, {ignoreComments: false, ignoreUrls: true}],
+        'max-len': [2, 120, 4, { ignoreComments: false, ignoreUrls: true }],
         // specify the maximum depth callbacks can be nested
         'max-nested-callbacks': 0,
         // limits the number of parameters that can be used in the function declaration
@@ -47,7 +47,7 @@ module.exports = {
         // specify the maximum number of statement allowed in a function
         'max-statements': 0,
         // require a capital letter for constructors
-        'new-cap': [2, {newIsCap: true, capIsNew: false}],
+        'new-cap': [2, { newIsCap: true, capIsNew: false }],
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 2,
         // allow/disallow an empty newline after var statement
@@ -65,7 +65,7 @@ module.exports = {
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 2,
         // disallow multiple empty lines and only one newline at the end
-        'no-multiple-empty-lines': [2, {max: 1, maxEOF: 1}],
+        'no-multiple-empty-lines': [2, { max: 1, maxEOF: 1 }],
         // disallow negated conditions
         'no-negated-condition': 2,
         // disallow nested ternary expressions
@@ -93,17 +93,17 @@ module.exports = {
         // require assignment operator shorthand where possible or prohibit it entirely
         'operator-assignment': [2, 'always'],
         // enforce operators to be placed before or after line breaks
-        'operator-linebreak': [2, 'before', { overrides: { '?': 'after' }}],
+        'operator-linebreak': [2, 'before', { overrides: { '?': 'after' } }],
         // enforce padding within blocks
         'padded-blocks': [2, 'never'],
         // require quotes around object literal property names
-        'quote-props': [2, 'as-needed', { keywords: true, unnecessary: false, numbers: true }],
+        'quote-props': [2, 'as-needed', { keywords: false, unnecessary: false, numbers: true }],
         // specify whether double or single quotes should be used
         quotes: [2, 'single'],
         // Require JSDoc comment
         'require-jsdoc': 0,
         // enforce spacing before and after semicolons
-        'semi-spacing': [2, {before: false, after: true}],
+        'semi-spacing': [2, { before: false, after: true }],
         // require or disallow use of semicolons instead of ASI
         semi: [2, 'always'],
         // sort variables within the same declaration block
@@ -113,7 +113,7 @@ module.exports = {
         // require or disallow space before blocks
         'space-before-blocks': [2, 'always'],
         // require or disallow space before function opening parenthesis
-        'space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
+        'space-before-function-paren': [2, { anonymous: 'always', named: 'never' }],
         // require a space before certain keywords
         'space-before-keywords': [2, 'always'],
         // require or disallow spaces inside parentheses

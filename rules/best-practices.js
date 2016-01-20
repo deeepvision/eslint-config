@@ -15,7 +15,7 @@ module.exports = {
         // enforces consistent newlines before or after dots
         'dot-location': [2, 'property'],
         // encourages use of dot notation whenever possible
-        'dot-notation': [2, {allowKeywords: true}],
+        'dot-notation': [2, { allowKeywords: true }],
         // require the use of === and !==
         eqeqeq: 2,
         // make sure for-in loops have an if statement
@@ -61,7 +61,7 @@ module.exports = {
         // disallow creation of functions within loops
         'no-loop-func': 2,
         // disallow Magic Numbers
-        'no-magic-numbers': [2, {enforceConst: true}],
+        'no-magic-numbers': 0,
         // disallow use of multiple spaces
         'no-multi-spaces': 2,
         // disallow use of multiline strings
