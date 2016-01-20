@@ -6,7 +6,8 @@ module.exports = {
         'hope/rules/variables',
         'hope/rules/node',
         'hope/rules/style',
-        'hope/rules/es6'
+        'hope/rules/es6',
+        'hope/rules/react'
     ],
     rules: {}
 };
