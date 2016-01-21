@@ -4,7 +4,7 @@ module.exports = {
     },
     rules: {
         // require braces in arrow function body
-        'arrow-body-style': [2, 'always'],
+        'arrow-body-style': 0,
         // require parens in arrow function arguments
         'arrow-parens': [2, 'always'],
         // require space before/after arrow function's arrow

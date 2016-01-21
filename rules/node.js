@@ -4,9 +4,9 @@ module.exports = {
     },
     rules: {
         // enforce return after a callback
-        'callback-return': [2, ['callback', 'cb', 'next']],
+        'callback-return': 0,
         // enforce require() on top-level module scope
-        'global-require': 2,
+        'global-require': 0,
         // enforces error handling in callbacks (node environment)
         'handle-callback-err': [2, 'error'],
         // disallow mixing regular variable and require declarations

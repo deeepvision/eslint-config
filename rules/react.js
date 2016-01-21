@@ -23,7 +23,7 @@ module.exports = {
         'react/jsx-curly-spacing': [2, 'always'],
         // Enforce event handler naming conventions in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-        'react/jsx-handler-names': 2,
+        'react/jsx-handler-names': 0,
         // Validate props indentation in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
         'react/jsx-indent-props': [2, 4],
@@ -35,7 +35,7 @@ module.exports = {
         'react/jsx-key': 2,
         // Limit maximum of props on a single line in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-        'react/jsx-max-props-per-line': [2, { maximum: 2 }],
+        'react/jsx-max-props-per-line': [2, { maximum: 3 }],
         // Prevent usage of .bind() and arrow functions in JSX props
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
         'react/jsx-no-bind': 2,

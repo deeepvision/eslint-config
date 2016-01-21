@@ -5,7 +5,7 @@ module.exports = {
         // treat var statements as if they were block scoped
         'block-scoped-var': 2,
         // specify the maximum cyclomatic complexity allowed in a program
-        complexity: [2, 5],
+        complexity: 0,
         // require return statements to either always or never specify values
         'consistent-return': 2,
         // specify curly brace conventions for all control statements
@@ -25,7 +25,7 @@ module.exports = {
         // disallow use of arguments.caller or arguments.callee
         'no-caller': 2,
         // disallow lexical declarations in case/default clauses
-        'no-case-declarations': 2,
+        'no-case-declarations': 0,
         // disallow division operators explicitly at beginning of regular expression
         'no-div-regex': 2,
         // disallow else after a return in an if
@@ -63,7 +63,7 @@ module.exports = {
         // disallow Magic Numbers
         'no-magic-numbers': 0,
         // disallow use of multiple spaces
-        'no-multi-spaces': 2,
+        'no-multi-spaces': [2, { exceptions: { 'VariableDeclarator': true } }],
         // disallow use of multiline strings
         'no-multi-str': 2,
         // disallow reassignments of native objects

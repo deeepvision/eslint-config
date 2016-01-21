@@ -15,7 +15,7 @@ module.exports = {
         // disallow padding inside computed properties
         'computed-property-spacing': [2, 'never'],
         // enforces consistent naming when capturing the current execution context
-        'consistent-this': [2, 'self'],
+        'consistent-this': 0,
         // enforce newline at the end of file, with no multiple empty lines
         'eol-last': 2,
         // require function expressions to have a name
@@ -51,7 +51,7 @@ module.exports = {
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 2,
         // allow/disallow an empty newline after var statement
-        'newline-after-var': 2,
+        'newline-after-var': 0,
         // disallow use of the Array constructor
         'no-array-constructor': 2,
         // disallow use of bitwise operators
@@ -67,7 +67,7 @@ module.exports = {
         // disallow multiple empty lines and only one newline at the end
         'no-multiple-empty-lines': [2, { max: 1, maxEOF: 1 }],
         // disallow negated conditions
-        'no-negated-condition': 2,
+        'no-negated-condition': 0,
         // disallow nested ternary expressions
         'no-nested-ternary': 2,
         // disallow use of the Object constructor
@@ -83,7 +83,7 @@ module.exports = {
         // disallow trailing whitespace at the end of lines
         'no-trailing-spaces': 2,
         // disallow dangling underscores in identifiers
-        'no-underscore-dangle': 2,
+        'no-underscore-dangle': 0,
         // disallow the use of Boolean literals in conditional expressions
         'no-unneeded-ternary': 2,
         // require padding inside curly braces
