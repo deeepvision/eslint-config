@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hope",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Hope.UA ESLint config",
   "main": "index.js",
   "repository": {
@@ -17,8 +17,8 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "devDependencies": {
-    "eslint": "^1.10.3",
-    "eslint-plugin-react": "^3.15.0"
+  "dependencies": {
+    "eslint": "^2.3.0",
+    "eslint-plugin-react": "^4.2.1"
   }
 }
