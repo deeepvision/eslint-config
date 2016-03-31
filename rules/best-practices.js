@@ -115,6 +115,8 @@ module.exports = {
         'no-useless-call': 'error',
         // disallow unnecessary concatenation of literals or template literals
         'no-useless-concat': 'error',
+        // disallow unnecessary escape usage
+        'no-useless-escape': 'error',
         // disallow use of void operator
         'no-void': 'off',
         // disallow usage of configurable warning terms in comments: e.g. todo

@@ -30,6 +30,8 @@ module.exports = {
         'no-const-assign': 'error',
         // disallow duplicate name in class members
         'no-dupe-class-members': 'error',
+        // disallow duplicate module imports
+        'no-duplicate-imports': 'error',
         // disallow use of the new operator with the Symbol object
         'no-new-symbol': 'error',
         // disallow to use this/super before super() calling in constructors.
