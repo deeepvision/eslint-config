@@ -15,6 +15,7 @@
   "author": "Sergey Sadovoi <sergey@hope.ua>",
   "license": "MIT",
   "scripts": {
+    "test": "npm link && npm link eslint-config-hope && npm run lint && rm -f ./node_modules/eslint-config-hope",
     "lint": "eslint ."
   },
   "dependencies": {
