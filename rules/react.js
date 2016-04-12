@@ -49,7 +49,7 @@ module.exports = {
         'react/prefer-es6-class': ['error', 'always'],
         // Enforce stateless React Components to be written as a pure function
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-        'react/prefer-stateless-function': 'off',
+        'react/prefer-stateless-function': 'error',
         // Prevent missing props validation in a React component definition
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
         'react/prop-types': 'error',
@@ -59,6 +59,9 @@ module.exports = {
         // Restrict file extensions that may be required
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
         'react/require-extension': ['error', { extensions: ['.js', '.jsx'] }],
+        // Enforce ES5 or ES6 class for returning value in render function
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
+        'react/require-render-return': 'error',
         // Prevent extra closing tags for components without children
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
         'react/self-closing-comp': 'error',
