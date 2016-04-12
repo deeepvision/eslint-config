@@ -15,14 +15,14 @@ module.exports = {
         // disallow shadowing of names such as arguments
         'no-shadow-restricted-names': 'error',
         // disallow use of undeclared variables unless mentioned in a /*global */ block
-        'no-undef': 'off', // 'error' TODO update babel-eslint to 6
+        'no-undef': 'error',
         // disallow use of undefined when initializing variables
         'no-undef-init': 'error',
         // disallow use of undefined variable
         'no-undefined': 'error',
         // disallow declaration of variables that are not used in the code
-        'no-unused-vars': 'off', // ['error', { vars: 'local', args: 'after-used' }]  TODO update babel-eslint to 6
+        'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }],
         // disallow use of variables before they are defined
-        'no-use-before-define': 'off' // 'error' TODO update babel-eslint to 6
+        'no-use-before-define': 'error'
     }
 };
