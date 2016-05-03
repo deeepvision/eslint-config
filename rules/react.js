@@ -90,6 +90,9 @@ module.exports = {
         // Enforce or disallow spaces around equal signs in JSX attributes
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
         'react/jsx-equals-spacing': ['error', 'never'],
+        // Enforce position of the first prop in JSX
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
+        'react/jsx-first-prop-new-line': ['error', 'multiline'],
         // Enforce event handler naming conventions in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
         'react/jsx-handler-names': 'off',
