@@ -5,11 +5,18 @@ module.exports = {
         // disallow or enforce spaces inside of single line blocks
         'block-spacing': ['error', 'always'],
         // enforce one true brace style
-        'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+        'brace-style': ['error', '1tbs', {
+            allowSingleLine: true
+        }],
         // require camel case names
-        camelcase: ['error', { properties: 'always' }],
+        camelcase: ['error', {
+            properties: 'always'
+        }],
         // enforce spacing before and after comma
-        'comma-spacing': ['error', { before: false, after: true }],
+        'comma-spacing': ['error', {
+            before: false,
+            after: true
+        }],
         // enforce one true comma style
         'comma-style': ['error', 'last'],
         // disallow padding inside computed properties
@@ -29,11 +36,17 @@ module.exports = {
         // require identifiers to match the provided regular expression
         'id-match': 'off',
         // this option sets a specific tab width for your code
-        indent: ['error', 4, { SwitchCase: 1, VariableDeclarator: 1 }],
+        indent: ['error', 4, {
+            SwitchCase: 1,
+            VariableDeclarator: 1
+        }],
         // specify whether double or single quotes should be used in JSX attributes
         'jsx-quotes': ['error', 'prefer-double'],
         // enforces spacing between keys and values in object literal properties
-        'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+        'key-spacing': ['error', {
+            beforeColon: false,
+            afterColon: true
+        }],
         // enforce spacing before and after keywords
         'keyword-spacing': 'error',
         // disallow mixed 'LF' and 'CRLF' as linebreaks
@@ -43,7 +56,10 @@ module.exports = {
         // specify the maximum depth that blocks can be nested
         'max-depth': 'off',
         // specify the maximum length of a line in your program
-        'max-len': ['error', 120, 4, { ignoreComments: false, ignoreUrls: true }],
+        'max-len': ['error', 120, 4, {
+            ignoreComments: false,
+            ignoreUrls: true
+        }],
         // specify the maximum depth callbacks can be nested
         'max-nested-callbacks': 'off',
         // limits the number of parameters that can be used in the function declaration
@@ -53,7 +69,10 @@ module.exports = {
         // specify the maximum number of statements allowed per line
         'max-statements-per-line': 'error',
         // require a capital letter for constructors
-        'new-cap': ['error', { newIsCap: true, capIsNew: false }],
+        'new-cap': ['error', {
+            newIsCap: true,
+            capIsNew: false
+        }],
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 'error',
         // allow/disallow an empty newline after var statement
@@ -61,7 +80,9 @@ module.exports = {
         // require newline before return statement
         'newline-before-return': 'error',
         // newline per chained method call
-        'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
+        'newline-per-chained-call': ['error', {
+            ignoreChainWithDepth: 2
+        }],
         // disallow use of the Array constructor
         'no-array-constructor': 'error',
         // disallow use of bitwise operators
@@ -75,7 +96,10 @@ module.exports = {
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 'error',
         // disallow multiple empty lines and only one newline at the end
-        'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
+        'no-multiple-empty-lines': ['error', {
+            max: 1,
+            maxEOF: 1
+        }],
         // disallow negated conditions
         'no-negated-condition': 'off',
         // disallow nested ternary expressions
@@ -107,11 +131,19 @@ module.exports = {
         // require assignment operator shorthand where possible or prohibit it entirely
         'operator-assignment': ['error', 'always'],
         // enforce operators to be placed before or after line breaks
-        'operator-linebreak': ['error', 'before', { overrides: { '?': 'after' } }],
+        'operator-linebreak': ['error', 'before', {
+            overrides: {
+                '?': 'after'
+            }
+        }],
         // enforce padding within blocks
         'padded-blocks': ['error', 'never'],
         // require quotes around object literal property names
-        'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: false, numbers: true }],
+        'quote-props': ['error', 'as-needed', {
+            keywords: false,
+            unnecessary: false,
+            numbers: true
+        }],
         // specify whether double or single quotes should be used
         quotes: ['error', 'single'],
         // Require JSDoc comment
@@ -119,19 +151,28 @@ module.exports = {
         // require or disallow use of semicolons instead of ASI
         semi: ['error', 'always'],
         // enforce spacing before and after semicolons
-        'semi-spacing': ['error', { before: false, after: true }],
+        'semi-spacing': ['error', {
+            before: false,
+            after: true
+        }],
         // sort variables within the same declaration block
         'sort-vars': 'off',
         // require or disallow space before blocks
         'space-before-blocks': ['error', 'always'],
         // require or disallow space before function opening parenthesis
-        'space-before-function-paren': ['error', { anonymous: 'always', named: 'never' }],
+        'space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'never'
+        }],
         // require or disallow spaces inside parentheses
         'space-in-parens': ['error', 'never'],
         // require spaces around operators
         'space-infix-ops': 'error',
         // Require or disallow spaces before/after unary operators
-        'space-unary-ops': ['error', { words: true, nonwords: false }],
+        'space-unary-ops': ['error', {
+            words: true,
+            nonwords: false
+        }],
         // require or disallow a space immediately following the // or /* in a comment
         'spaced-comment': ['error', 'always'],
         // require regex literals to be wrapped in parentheses

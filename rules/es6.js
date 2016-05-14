@@ -17,7 +17,10 @@ module.exports = {
         // require parens in arrow function arguments
         'arrow-parens': ['error', 'always'],
         // require space before/after arrow function's arrow
-        'arrow-spacing': ['error', { before: true, after: true }],
+        'arrow-spacing': ['error', {
+            before: true,
+            after: true
+        }],
         // verify super() callings in constructors
         'constructor-super': 'error',
         // enforce the spacing around the * in generator functions
