@@ -100,6 +100,8 @@ module.exports = {
         'no-whitespace-before-property': 'error',
         // require padding inside curly braces
         'object-curly-spacing': ['error', 'always'],
+        // enforce placing object properties on separate lines
+        'object-property-newline': 'error',
         // allow just one var statement per function
         'one-var': ['error', 'never'],
         // require assignment operator shorthand where possible or prohibit it entirely

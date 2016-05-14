@@ -117,6 +117,9 @@ module.exports = {
         // Prevent usage of unwrapped JSX strings
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
         'react/jsx-no-literals': 'off',
+        // Prevent usage of unsafe target='_blank'
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+        'react/jsx-no-target-blank': 'error',
         // Disallow undeclared variables in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
         'react/jsx-no-undef': 'error',
