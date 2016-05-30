@@ -175,6 +175,8 @@ module.exports = {
         }],
         // require or disallow a space immediately following the // or /* in a comment
         'spaced-comment': ['error', 'always'],
+        // require or disallow the Unicode BOM
+        'unicode-bom': 'error',
         // require regex literals to be wrapped in parentheses
         'wrap-regex': 'off'
     }
