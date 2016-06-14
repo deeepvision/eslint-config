@@ -58,7 +58,9 @@ module.exports = {
         'react/react-in-jsx-scope': 'error',
         // Restrict file extensions that may be required
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
-        'react/require-extension': ['error', { extensions: ['.js', '.jsx'] }],
+        'react/require-extension': ['error', {
+            extensions: ['.js', '.jsx']
+        }],
         // Enforce ES5 or ES6 class for returning value in render function
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
         'react/require-render-return': 'error',
@@ -107,7 +109,9 @@ module.exports = {
         'react/jsx-key': 'error',
         // Limit maximum of props on a single line in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-        'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
+        'react/jsx-max-props-per-line': ['error', {
+            maximum: 3
+        }],
         // Prevent usage of .bind() and arrow functions in JSX props
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
         'react/jsx-no-bind': 'error',

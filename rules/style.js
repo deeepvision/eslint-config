@@ -60,6 +60,8 @@ module.exports = {
             ignoreComments: false,
             ignoreUrls: true
         }],
+        // enforce a maximum file length
+        'max-lines': 'off',
         // specify the maximum depth callbacks can be nested
         'max-nested-callbacks': 'off',
         // limits the number of parameters that can be used in the function declaration
@@ -93,6 +95,10 @@ module.exports = {
         'no-inline-comments': 'off',
         // disallow if as the only statement in an else block
         'no-lonely-if': 'error',
+        // disallow mixes of different operators
+        'no-mixed-operators': ['error', {
+            allowSamePrecedence: true
+        }],
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 'error',
         // disallow multiple empty lines and only one newline at the end
@@ -122,6 +128,8 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         // disallow whitespace before properties
         'no-whitespace-before-property': 'error',
+        // enforce consistent line breaks inside braces
+        'object-curly-newline': ['error', 'always'],
         // require padding inside curly braces
         'object-curly-spacing': ['error', 'always'],
         // enforce placing object properties on separate lines

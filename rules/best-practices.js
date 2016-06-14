@@ -17,7 +17,9 @@ module.exports = {
         // enforces consistent newlines before or after dots
         'dot-location': ['error', 'property'],
         // encourages use of dot notation whenever possible
-        'dot-notation': ['error', { allowKeywords: true }],
+        'dot-notation': ['error', {
+            allowKeywords: true
+        }],
         // require the use of === and !==
         eqeqeq: 'error',
         // make sure for-in loops have an if statement
@@ -69,7 +71,11 @@ module.exports = {
         // disallow Magic Numbers
         'no-magic-numbers': 'off',
         // disallow use of multiple spaces
-        'no-multi-spaces': ['error', { exceptions: { 'VariableDeclarator': true } }],
+        'no-multi-spaces': ['error', {
+            exceptions: {
+                'VariableDeclarator': true
+            }
+        }],
         // disallow use of multiline strings
         'no-multi-str': 'error',
         // disallow reassignments of native objects

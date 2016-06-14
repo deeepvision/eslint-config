@@ -8,7 +8,8 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
             generators: false,
-            objectLiteralDuplicateProperties: false
+            objectLiteralDuplicateProperties: false,
+            experimentalObjectRestSpread: true
         }
     },
     rules: {
@@ -63,6 +64,10 @@ module.exports = {
         'prefer-template': 'error',
         // disallow generator functions that do not have yield
         'require-yield': 'error',
+        //  enforce spacing between rest and spread operators and their expressions
+        'rest-spread-spacing': ['error', 'never'],
+        // enforce sorted import declarations within modules
+        'sort-imports': 'off',
         // enforce spacing around embedded expressions of template strings
         'template-curly-spacing': ['error', 'never'],
         // enforce spacing around the * in yield* expressions
