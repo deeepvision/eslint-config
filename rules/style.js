@@ -12,6 +12,10 @@ module.exports = {
         camelcase: ['error', {
             properties: 'always'
         }],
+        // enforce or disallow capitalization of the first letter of a comment
+        'capitalized-comments': 'off',
+        // disallow trailing commas in object literals
+        'comma-dangle': ['error', 'never'],
         // enforce spacing before and after comma
         'comma-spacing': ['error', {
             before: false,
@@ -25,6 +29,10 @@ module.exports = {
         'consistent-this': 'off',
         // enforce newline at the end of file, with no multiple empty lines
         'eol-last': 'error',
+        // require or disallow spacing between function identifiers and their invocations
+        'func-call-spacing': ['error', 'never'],
+        // require function names to match the name of the variable or property to which they are assigned
+        'func-name-matching': 'off',
         // require function expressions to have a name
         'func-names': 'off',
         // enforces use of function declarations or expressions
@@ -49,10 +57,14 @@ module.exports = {
         }],
         // enforce spacing before and after keywords
         'keyword-spacing': 'error',
+        // enforce position of line comments
+        'line-comment-position': 'off',
         // disallow mixed 'LF' and 'CRLF' as linebreaks
         'linebreak-style': ['error', 'unix'],
         // enforces empty lines around comments
         'lines-around-comment': 'off',
+        // require or disallow newlines around directives
+        'lines-around-directive': ['error', 'always'],
         // specify the maximum depth that blocks can be nested
         'max-depth': 'off',
         // specify the maximum length of a line in your program
@@ -66,10 +78,12 @@ module.exports = {
         'max-nested-callbacks': 'off',
         // limits the number of parameters that can be used in the function declaration
         'max-params': 'off',
-        // specify the maximum number of statement allowed in a function
-        'max-statements': 'off',
         // specify the maximum number of statements allowed per line
         'max-statements-per-line': 'error',
+        // specify the maximum number of statement allowed in a function
+        'max-statements': 'off',
+        // enforce newlines between operands of ternary expressions
+        'multiline-ternary': 'off',
         // require a capital letter for constructors
         'new-cap': ['error', {
             newIsCap: true,
@@ -101,6 +115,8 @@ module.exports = {
         }],
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 'error',
+        // disallow use of chained assignment expressions
+        'no-multi-assign': 'error',
         // disallow multiple empty lines and only one newline at the end
         'no-multiple-empty-lines': ['error', {
             max: 1,
@@ -116,8 +132,8 @@ module.exports = {
         'no-plusplus': 'off',
         // disallow use of certain syntax in code
         'no-restricted-syntax': 'off',
-        // disallow space between function identifier and application
-        'no-spaced-func': 'error',
+        // disallow all tabs
+        'no-tabs': 'error',
         // disallow the use of ternary operators
         'no-ternary': 'off',
         // disallow trailing whitespace at the end of lines
@@ -134,6 +150,8 @@ module.exports = {
         'object-curly-spacing': ['error', 'always'],
         // enforce placing object properties on separate lines
         'object-property-newline': 'error',
+        // require or disallow newlines around variable declarations
+        'one-var-declaration-per-line': 'error',
         // allow just one var statement per function
         'one-var': ['error', 'never'],
         // require assignment operator shorthand where possible or prohibit it entirely
@@ -156,13 +174,15 @@ module.exports = {
         quotes: ['error', 'single'],
         // Require JSDoc comment
         'require-jsdoc': 'off',
-        // require or disallow use of semicolons instead of ASI
-        semi: ['error', 'always'],
         // enforce spacing before and after semicolons
         'semi-spacing': ['error', {
             before: false,
             after: true
         }],
+        // require or disallow use of semicolons instead of ASI
+        semi: ['error', 'always'],
+        // require object keys to be sorted
+        'sort-keys': 'off',
         // sort variables within the same declaration block
         'sort-vars': 'off',
         // require or disallow space before blocks

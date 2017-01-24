@@ -15,12 +15,12 @@ module.exports = {
         'no-new-require': 'error',
         // disallow string concatenation with __dirname and __filename
         'no-path-concat': 'error',
+        // disallow use of process.env
+        'no-process-env': 'off',
         // disallow process.exit()
         'no-process-exit': 'off',
         // disallow specific imports
         'no-restricted-imports': 'off',
-        // restrict usage of specified node modules
-        'no-restricted-modules': 'off',
         // disallow use of synchronous methods (off by default)
         'no-sync': 'error'
     }

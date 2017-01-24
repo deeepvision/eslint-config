@@ -38,6 +38,8 @@ module.exports = {
         'no-duplicate-imports': 'error',
         // disallow use of the new operator with the Symbol object
         'no-new-symbol': 'error',
+        // disallow specified modules when loaded by import
+        'no-restricted-imports': 'off',
         // disallow to use this/super before super() calling in constructors.
         'no-this-before-super': 'error',
         // disallow unnecessary computed property keys in object literals
@@ -54,8 +56,15 @@ module.exports = {
         'prefer-arrow-callback': 'error',
         // suggest using of const declaration for variables that are never modified after declared
         'prefer-const': 'error',
-        // suggest using Reflect methods where applicable
-        'prefer-reflect': 'error',
+        // require destructuring from arrays and/or objects
+        'prefer-destructuring': ['error', {
+            'array': true,
+            'object': true
+        }, {
+            'enforceForRenamedProperties': false
+        }],
+        // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+        'prefer-numeric-literals': 'error',
         // suggest using the rest parameters instead of arguments
         'prefer-rest-params': 'error',
         // suggest using the spread operator instead of .apply()
@@ -68,6 +77,8 @@ module.exports = {
         'rest-spread-spacing': ['error', 'never'],
         // enforce sorted import declarations within modules
         'sort-imports': 'off',
+        // require symbol descriptions
+        'symbol-description': 'error',
         // enforce spacing around embedded expressions of template strings
         'template-curly-spacing': ['error', 'never'],
         // enforce spacing around the * in yield* expressions

@@ -9,6 +9,5 @@ module.exports = {
         'hope/rules/es6',
         'hope/rules/react'
     ],
-    rules: {
-    }
+    rules: {}
 };

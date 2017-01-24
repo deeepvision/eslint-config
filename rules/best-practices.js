@@ -6,6 +6,8 @@ module.exports = {
         'array-callback-return': 'error',
         // treat var statements as if they were block scoped
         'block-scoped-var': 'error',
+        // enforce that class methods utilize this
+        'class-methods-use-this': 'error',
         // specify the maximum cyclomatic complexity allowed in a program
         complexity: 'off',
         // require return statements to either always or never specify values
@@ -52,6 +54,8 @@ module.exports = {
         'no-fallthrough': 'error',
         // disallow the use of leading or trailing decimal points in numeric literals
         'no-floating-decimal': 'error',
+        // disallow assignments to native objects or read-only global variables
+        'no-global-assign': 'error',
         // disallow the type conversions with shorter notations
         'no-implicit-coercion': 'error',
         // disallow var and named functions in global scope
@@ -78,29 +82,28 @@ module.exports = {
         }],
         // disallow use of multiline strings
         'no-multi-str': 'error',
-        // disallow reassignments of native objects
-        'no-native-reassign': 'error',
-        // disallow use of new operator when not part of the assignment or comparison
-        'no-new': 'error',
         // disallow use of new operator for Function object
         'no-new-func': 'error',
         // disallows creating new instances of String, Number and Boolean
         'no-new-wrappers': 'error',
+        // disallow use of new operator when not part of the assignment or comparison
+        'no-new': 'error',
+        // disallow use of octal escape sequences in string literals
+        'no-octal-escape': 'error',
         // disallow use of (old style) octal literals
         'no-octal': 'error',
-        // disallow use of octal escape sequences in string literals, such as
-        // var foo = 'Copyright \'error'51';
-        'no-octal-escape': 'error',
         // disallow reassignment of function parameters
         'no-param-reassign': 'off',
-        // disallow use of process.env
-        'no-process-env': 'off',
         // disallow usage of __proto__ property
         'no-proto': 'error',
         // disallow declaring the same variable more then once
         'no-redeclare': 'error',
+        // disallow certain properties on certain objects
+        'no-restricted-properties': 'off',
         // disallow use of assignment in return statement
         'no-return-assign': 'error',
+        // disallow unnecessary return await
+        'no-return-await': 'error',
         // disallow use of `javascript:` urls.
         'no-script-url': 'error',
         // disallow self assignment
@@ -123,14 +126,22 @@ module.exports = {
         'no-useless-concat': 'error',
         // disallow unnecessary escape usage
         'no-useless-escape': 'error',
+        // disallow redundant return statements
+        'no-useless-return': 'error',
         // disallow use of void operator
-        'no-void': 'off',
+        'no-void': 'error',
         // disallow usage of configurable warning terms in comments: e.g. todo
         'no-warning-comments': 'off',
         // disallow use of the with statement
         'no-with': 'error',
+        // require using Error objects as Promise rejection reasons
+        'prefer-promise-reject-errors': ['error', {
+            allowEmptyReject: true
+        }],
         // require use of the second argument for parseInt()
         radix: 'error',
+        // disallow async functions which have no await expression
+        'require-await': 'error',
         // requires to declare all vars on top of their containing scope
         'vars-on-top': 'error',
         // require immediate function invocation to be wrapped in parentheses

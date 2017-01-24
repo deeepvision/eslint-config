@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
-        // disallow trailing commas in object literals
-        'comma-dangle': ['error', 'never'],
+        // disallow await inside of loops
+        'no-await-in-loop': 'off',
         // disallow assignment in conditional expressions
         'no-cond-assign': ['error', 'always'],
         // disallow use of console
@@ -18,10 +18,10 @@ module.exports = {
         'no-dupe-keys': 'error',
         // disallow a duplicate case label.
         'no-duplicate-case': 'error',
-        // disallow empty statements
-        'no-empty': 'error',
         // disallow the use of empty character classes in regular expressions
         'no-empty-character-class': 'error',
+        // disallow empty statements
+        'no-empty': 'error',
         // disallow assigning to the exception in a catch block
         'no-ex-assign': 'error',
         // disallow double-negation boolean casts in a boolean context
@@ -38,8 +38,6 @@ module.exports = {
         'no-invalid-regexp': 'error',
         // disallow irregular whitespace outside of strings and comments
         'no-irregular-whitespace': 'error',
-        // disallow negation of the left operand of an in expression
-        'no-negated-in-lhs': 'error',
         // disallow the use of object properties of the global object (Math and JSON) as functions
         'no-obj-calls': 'error',
         // Disallow use of Object.prototypes builtins directly
@@ -48,12 +46,16 @@ module.exports = {
         'no-regex-spaces': 'error',
         // disallow sparse arrays
         'no-sparse-arrays': 'error',
+        // disallow template literal placeholder syntax in regular strings
+        'no-template-curly-in-string': 'error',
         // avoid code that looks like two expressions but is actually one
         'no-unexpected-multiline': 'error',
         // disallow unreachable statements after a return, throw, continue, or break statement
         'no-unreachable': 'error',
         // disallow control flow statements in finally blocks
         'no-unsafe-finally': 'error',
+        // disallow negating the left operand of relational operators
+        'no-unsafe-negation': 'error',
         // disallow comparisons with the value NaN
         'use-isnan': 'error',
         // ensure JSDoc comments are valid
