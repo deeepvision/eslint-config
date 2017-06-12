@@ -9,5 +9,12 @@ module.exports = {
         'hope/rules/es6',
         'hope/rules/react'
     ],
+    parserOptions: {
+        ecmaVersion: 2017,
+        sourceType: 'module',
+        ecmaFeatures: {
+            experimentalObjectRestSpread: true
+        }
+    },
     rules: {}
 };

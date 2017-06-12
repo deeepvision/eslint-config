@@ -6,10 +6,8 @@ module.exports = {
         ecmaVersion: 6,
         sourceType: 'module',
         ecmaFeatures: {
-            jsx: true,
             generators: false,
-            objectLiteralDuplicateProperties: false,
-            experimentalObjectRestSpread: true
+            objectLiteralDuplicateProperties: false
         }
     },
     rules: {

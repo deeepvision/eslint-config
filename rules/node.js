@@ -9,6 +9,8 @@ module.exports = {
         'global-require': 'off',
         // enforces error handling in callbacks (node environment)
         'handle-callback-err': ['error', 'error'],
+        // disallow use of the Buffer() constructor
+        'no-buffer-constructor': 'error',
         // disallow mixing regular variable and require declarations
         'no-mixed-requires': 'error',
         // disallow use of new operator with the require function
@@ -19,8 +21,8 @@ module.exports = {
         'no-process-env': 'off',
         // disallow process.exit()
         'no-process-exit': 'off',
-        // disallow specific imports
-        'no-restricted-imports': 'off',
+        // disallow specified modules when loaded by require
+        'no-restricted-modules': 'off',
         // disallow use of synchronous methods (off by default)
         'no-sync': 'error'
     }

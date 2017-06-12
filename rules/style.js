@@ -1,7 +1,15 @@
 module.exports = {
     rules: {
+        // enforce linebreaks after opening and before closing array brackets
+        'array-bracket-newline': ['error', {
+            multiline: true
+        }],
         // enforce spacing inside array brackets
         'array-bracket-spacing': ['error', 'never'],
+        // enforce line breaks after each array element
+        'array-element-newline': ['error', {
+            multiline: true
+        }],
         // disallow or enforce spaces inside of single line blocks
         'block-spacing': ['error', 'always'],
         // enforce one true brace style
@@ -63,8 +71,6 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
         // enforces empty lines around comments
         'lines-around-comment': 'off',
-        // require or disallow newlines around directives
-        'lines-around-directive': ['error', 'always'],
         // specify the maximum depth that blocks can be nested
         'max-depth': 'off',
         // specify the maximum length of a line in your program
@@ -78,10 +84,10 @@ module.exports = {
         'max-nested-callbacks': 'off',
         // limits the number of parameters that can be used in the function declaration
         'max-params': 'off',
-        // specify the maximum number of statements allowed per line
-        'max-statements-per-line': 'error',
         // specify the maximum number of statement allowed in a function
         'max-statements': 'off',
+        // specify the maximum number of statements allowed per line
+        'max-statements-per-line': 'error',
         // enforce newlines between operands of ternary expressions
         'multiline-ternary': 'off',
         // require a capital letter for constructors
@@ -91,10 +97,6 @@ module.exports = {
         }],
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 'error',
-        // allow/disallow an empty newline after var statement
-        'newline-after-var': 'off',
-        // require newline before return statement
-        'newline-before-return': 'error',
         // newline per chained method call
         'newline-per-chained-call': ['error', {
             ignoreChainWithDepth: 2
@@ -144,16 +146,18 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         // disallow whitespace before properties
         'no-whitespace-before-property': 'error',
+        // enforce the location of single-line statements
+        'nonblock-statement-body-position': 'off',
         // enforce consistent line breaks inside braces
         'object-curly-newline': 'off',
         // require padding inside curly braces
         'object-curly-spacing': ['error', 'always'],
         // enforce placing object properties on separate lines
         'object-property-newline': 'error',
-        // require or disallow newlines around variable declarations
-        'one-var-declaration-per-line': 'error',
         // allow just one var statement per function
         'one-var': ['error', 'never'],
+        // require or disallow newlines around variable declarations
+        'one-var-declaration-per-line': 'error',
         // require assignment operator shorthand where possible or prohibit it entirely
         'operator-assignment': ['error', 'always'],
         // enforce operators to be placed before or after line breaks
@@ -164,6 +168,11 @@ module.exports = {
         }],
         // enforce padding within blocks
         'padded-blocks': ['error', 'never'],
+        // require or disallow padding lines between statements
+        'padding-line-between-statements': ['error', {
+            blankLine: 'always',
+            next: 'return'
+        }],
         // require quotes around object literal property names
         'quote-props': ['error', 'as-needed', {
             keywords: false,
@@ -174,13 +183,15 @@ module.exports = {
         quotes: ['error', 'single'],
         // Require JSDoc comment
         'require-jsdoc': 'off',
+        // require or disallow use of semicolons instead of ASI
+        semi: ['error', 'always'],
         // enforce spacing before and after semicolons
         'semi-spacing': ['error', {
             before: false,
             after: true
         }],
-        // require or disallow use of semicolons instead of ASI
-        semi: ['error', 'always'],
+        // enforce location of semicolons
+        'semi-style': ['error', 'last'],
         // require object keys to be sorted
         'sort-keys': 'off',
         // sort variables within the same declaration block
@@ -203,8 +214,15 @@ module.exports = {
         }],
         // require or disallow a space immediately following the // or /* in a comment
         'spaced-comment': ['error', 'always'],
+        // enforce spacing around colons of switch statements
+        'switch-colon-spacing': ['error', {
+            after: true,
+            before: false
+        }],
+        // require or disallow spacing between template tags and their literals
+        'template-tag-spacing': 'error',
         // require or disallow the Unicode BOM
-        'unicode-bom': 'error',
+        'unicode-bom': ['error', 'never'],
         // require regex literals to be wrapped in parentheses
         'wrap-regex': 'off'
     }

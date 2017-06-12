@@ -1,7 +1,11 @@
 module.exports = {
     rules: {
+        // enforce “for” loop update clause moving the counter in the right direction
+        'for-direction': 'error',
         // disallow await inside of loops
         'no-await-in-loop': 'off',
+        // disallow comparing against -0
+        'no-compare-neg-zero': 'error',
         // disallow assignment in conditional expressions
         'no-cond-assign': ['error', 'always'],
         // disallow use of console
@@ -18,11 +22,11 @@ module.exports = {
         'no-dupe-keys': 'error',
         // disallow a duplicate case label.
         'no-duplicate-case': 'error',
-        // disallow the use of empty character classes in regular expressions
-        'no-empty-character-class': 'error',
         // disallow empty statements
         'no-empty': 'error',
-        // disallow assigning to the exception in a catch block
+        // disallow the use of empty character classes in regular expressions
+        'no-empty-character-class': 'error',
+        // disallow reassigning exceptions in catch clauses
         'no-ex-assign': 'error',
         // disallow double-negation boolean casts in a boolean context
         'no-extra-boolean-cast': 'error',
