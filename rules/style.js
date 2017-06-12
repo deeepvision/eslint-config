@@ -1,15 +1,11 @@
 module.exports = {
     rules: {
         // enforce linebreaks after opening and before closing array brackets
-        'array-bracket-newline': ['error', {
-            multiline: true
-        }],
+        'array-bracket-newline': 'off',
         // enforce spacing inside array brackets
         'array-bracket-spacing': ['error', 'never'],
         // enforce line breaks after each array element
-        'array-element-newline': ['error', {
-            multiline: true
-        }],
+        'array-element-newline': 'off',
         // disallow or enforce spaces inside of single line blocks
         'block-spacing': ['error', 'always'],
         // enforce one true brace style
@@ -169,10 +165,14 @@ module.exports = {
         // enforce padding within blocks
         'padded-blocks': ['error', 'never'],
         // require or disallow padding lines between statements
-        'padding-line-between-statements': ['error', {
-            blankLine: 'always',
-            next: 'return'
-        }],
+        'padding-line-between-statements': [
+            'error',
+            {
+                blankLine: 'always',
+                next: 'return',
+                prev: '*'
+            }
+        ],
         // require quotes around object literal property names
         'quote-props': ['error', 'as-needed', {
             keywords: false,
