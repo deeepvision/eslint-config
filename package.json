@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hope",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Hope.UA ESLint config",
   "main": "index.js",
   "repository": {
@@ -12,7 +12,7 @@
     "eslintconfig",
     "hope.ua"
   ],
-  "author": "Serhii Sadovyi <s.sadovyi@hope.ua>",
+  "author": "Sergii Sadovyi <s.sadovyi@hope.ua>",
   "license": "MIT",
   "scripts": {
     "test": "npm link && npm link eslint-config-hope && npm run lint && rm -f ./node_modules/eslint-config-hope",
@@ -20,8 +20,5 @@
   },
   "peerDependencies": {
     "eslint": "^4.0.0"
-  },
-  "eslintConfig": {
-    "extends": "hope"
   }
 }
