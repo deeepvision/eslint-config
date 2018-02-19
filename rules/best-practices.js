@@ -7,7 +7,7 @@ module.exports = {
         // treat var statements as if they were block scoped
         'block-scoped-var': 'error',
         // enforce that class methods utilize this
-        'class-methods-use-this': 'error',
+        'class-methods-use-this': 'off',
         // specify the maximum cyclomatic complexity allowed in a program
         complexity: 'off',
         // require return statements to either always or never specify values
@@ -37,7 +37,7 @@ module.exports = {
         // disallow else after a return in an if
         'no-else-return': 'error',
         // disallow use of labels for anything other then loops and switches
-        'no-empty-function': 'error',
+        'no-empty-function': 'off',
         // disallow empty destructuring patterns
         'no-empty-pattern': 'error',
         // disallow comparisons to null without a type-checking operator
@@ -141,7 +141,7 @@ module.exports = {
         // require use of the second argument for parseInt()
         radix: 'error',
         // disallow async functions which have no await expression
-        'require-await': 'error',
+        'require-await': 'off',
         // requires to declare all vars on top of their containing scope
         'vars-on-top': 'error',
         // require immediate function invocation to be wrapped in parentheses
