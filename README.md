@@ -8,23 +8,18 @@ ESLint
     
 Latest version of config
 
-    npm install eslint-config-hope --save-dev
-    
-React plugin
+    npm install @bit/deep.configs._.eslint --save-dev
 
-    npm install eslint-plugin-react --save-dev
-    
 Babel parser (for es6 code only)
 
     npm install babel-eslint --save-dev
 
 ## Usage
-Create **.eslintrc** file
+Create **.eslintrc.js** file
 
-    {
-        "extends": "hope",
-        "parser": "babel-eslint", // for es6 code only
-        "plugins": ["react"], // for React rules
+    module.exports = {
+        extends: "hope",
+        parser: "babel-eslint", // for es6 code only
         ...
     }
     
