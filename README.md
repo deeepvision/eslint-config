@@ -18,7 +18,8 @@ Babel parser (for es6 code only)
 Create **.eslintrc.js** file
 
     module.exports = {
-        extends: "hope",
+        root: true,
+        extends: './node_modules/@bit/deep.configs._.eslint/index.js', // little hack until eslint support configs without "eslint-config-*"
         parser: "babel-eslint", // for es6 code only
         ...
     }
