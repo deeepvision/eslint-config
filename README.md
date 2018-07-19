@@ -1,4 +1,4 @@
-# Hope.UA ESLint config 
+# DeepVision ESLint config
 Inspired by AirBnB ESLint config
 
 ## Install

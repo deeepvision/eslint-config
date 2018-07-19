@@ -20,7 +20,7 @@ module.exports = {
         'dot-location': ['error', 'property'],
         // encourages use of dot notation whenever possible
         'dot-notation': ['error', {
-            allowKeywords: true
+            allowKeywords: true,
         }],
         // require the use of === and !==
         eqeqeq: 'error',
@@ -77,8 +77,8 @@ module.exports = {
         // disallow use of multiple spaces
         'no-multi-spaces': ['error', {
             exceptions: {
-                'VariableDeclarator': true
-            }
+                'VariableDeclarator': true,
+            },
         }],
         // disallow use of multiline strings
         'no-multi-str': 'error',
@@ -136,7 +136,7 @@ module.exports = {
         'no-with': 'error',
         // require using Error objects as Promise rejection reasons
         'prefer-promise-reject-errors': ['error', {
-            allowEmptyReject: true
+            allowEmptyReject: true,
         }],
         // require use of the second argument for parseInt()
         radix: 'error',
@@ -147,6 +147,6 @@ module.exports = {
         // require immediate function invocation to be wrapped in parentheses
         'wrap-iife': ['error', 'any'],
         // require or disallow Yoda conditions
-        'yoda': 'error'
-    }
+        'yoda': 'error',
+    },
 };

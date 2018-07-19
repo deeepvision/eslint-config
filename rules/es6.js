@@ -1,14 +1,14 @@
 module.exports = {
     env: {
-        es6: true
+        es6: true,
     },
     parserOptions: {
         ecmaVersion: 6,
         sourceType: 'module',
         ecmaFeatures: {
             generators: false,
-            objectLiteralDuplicateProperties: false
-        }
+            objectLiteralDuplicateProperties: false,
+        },
     },
     rules: {
         // require braces in arrow function body
@@ -18,7 +18,7 @@ module.exports = {
         // require space before/after arrow function's arrow
         'arrow-spacing': ['error', {
             before: true,
-            after: true
+            after: true,
         }],
         // verify super() callings in constructors
         'constructor-super': 'error',
@@ -57,9 +57,9 @@ module.exports = {
         // require destructuring from arrays and/or objects
         'prefer-destructuring': ['error', {
             'array': true,
-            'object': true
+            'object': true,
         }, {
-            'enforceForRenamedProperties': false
+            'enforceForRenamedProperties': false,
         }],
         // disallow parseInt() in favor of binary, octal, and hexadecimal literals
         'prefer-numeric-literals': 'error',
@@ -80,6 +80,6 @@ module.exports = {
         // enforce spacing around embedded expressions of template strings
         'template-curly-spacing': ['error', 'never'],
         // enforce spacing around the * in yield* expressions
-        'yield-star-spacing': ['error', 'before']
-    }
+        'yield-star-spacing': ['error', 'before'],
+    },
 };

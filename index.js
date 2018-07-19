@@ -1,19 +1,16 @@
 module.exports = {
     extends: [
-        'hope/rules/errors',
-        'hope/rules/best-practices',
-        'hope/rules/strict',
-        'hope/rules/variables',
-        'hope/rules/node',
-        'hope/rules/style',
-        'hope/rules/es6'
+        './rules/errors.js',
+        './rules/best-practices.js',
+        './rules/strict.js',
+        './rules/variables.js',
+        './rules/node.js',
+        './rules/style.js',
+        './rules/es6.js',
     ],
     parserOptions: {
-        ecmaVersion: 2017,
+        ecmaVersion: 2018,
         sourceType: 'module',
-        ecmaFeatures: {
-            experimentalObjectRestSpread: true
-        }
     },
-    rules: {}
+    rules: {},
 };

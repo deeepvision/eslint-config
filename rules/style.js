@@ -10,11 +10,11 @@ module.exports = {
         'block-spacing': ['error', 'always'],
         // enforce one true brace style
         'brace-style': ['error', '1tbs', {
-            allowSingleLine: true
+            allowSingleLine: true,
         }],
         // require camel case names
         camelcase: ['error', {
-            properties: 'always'
+            properties: 'always',
         }],
         // enforce or disallow capitalization of the first letter of a comment
         'capitalized-comments': 'off',
@@ -23,7 +23,7 @@ module.exports = {
         // enforce spacing before and after comma
         'comma-spacing': ['error', {
             before: false,
-            after: true
+            after: true,
         }],
         // enforce one true comma style
         'comma-style': ['error', 'last'],
@@ -50,14 +50,14 @@ module.exports = {
         // this option sets a specific tab width for your code
         indent: ['error', 4, {
             SwitchCase: 1,
-            VariableDeclarator: 1
+            VariableDeclarator: 1,
         }],
         // specify whether double or single quotes should be used in JSX attributes
         'jsx-quotes': ['error', 'prefer-double'],
         // enforces spacing between keys and values in object literal properties
         'key-spacing': ['error', {
             beforeColon: false,
-            afterColon: true
+            afterColon: true,
         }],
         // enforce spacing before and after keywords
         'keyword-spacing': 'error',
@@ -72,7 +72,7 @@ module.exports = {
         // specify the maximum length of a line in your program
         'max-len': ['error', 120, 4, {
             ignoreComments: false,
-            ignoreUrls: true
+            ignoreUrls: true,
         }],
         // enforce a maximum file length
         'max-lines': 'off',
@@ -89,13 +89,13 @@ module.exports = {
         // require a capital letter for constructors
         'new-cap': ['error', {
             newIsCap: true,
-            capIsNew: false
+            capIsNew: false,
         }],
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 'error',
         // newline per chained method call
         'newline-per-chained-call': ['error', {
-            ignoreChainWithDepth: 2
+            ignoreChainWithDepth: 2,
         }],
         // disallow use of the Array constructor
         'no-array-constructor': 'error',
@@ -109,7 +109,7 @@ module.exports = {
         'no-lonely-if': 'error',
         // disallow mixes of different operators
         'no-mixed-operators': ['error', {
-            allowSamePrecedence: true
+            allowSamePrecedence: true,
         }],
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 'error',
@@ -118,7 +118,7 @@ module.exports = {
         // disallow multiple empty lines and only one newline at the end
         'no-multiple-empty-lines': ['error', {
             max: 1,
-            maxEOF: 1
+            maxEOF: 1,
         }],
         // disallow negated conditions
         'no-negated-condition': 'off',
@@ -159,8 +159,8 @@ module.exports = {
         // enforce operators to be placed before or after line breaks
         'operator-linebreak': ['error', 'before', {
             overrides: {
-                '?': 'after'
-            }
+                '?': 'after',
+            },
         }],
         // enforce padding within blocks
         'padded-blocks': ['error', 'never'],
@@ -170,14 +170,17 @@ module.exports = {
             {
                 blankLine: 'always',
                 next: 'return',
-                prev: '*'
-            }
+                prev: '*',
+            },
         ],
+        // disallow using Object.assign with an object literal as the first argument and prefer
+        // the use of object spread instead
+        'prefer-object-spread': 'error',
         // require quotes around object literal property names
         'quote-props': ['error', 'as-needed', {
             keywords: false,
             unnecessary: false,
-            numbers: true
+            numbers: true,
         }],
         // specify whether double or single quotes should be used
         quotes: ['error', 'single'],
@@ -188,7 +191,7 @@ module.exports = {
         // enforce spacing before and after semicolons
         'semi-spacing': ['error', {
             before: false,
-            after: true
+            after: true,
         }],
         // enforce location of semicolons
         'semi-style': ['error', 'last'],
@@ -201,7 +204,7 @@ module.exports = {
         // require or disallow space before function opening parenthesis
         'space-before-function-paren': ['error', {
             anonymous: 'always',
-            named: 'never'
+            named: 'never',
         }],
         // require or disallow spaces inside parentheses
         'space-in-parens': ['error', 'never'],
@@ -210,20 +213,20 @@ module.exports = {
         // Require or disallow spaces before/after unary operators
         'space-unary-ops': ['error', {
             words: true,
-            nonwords: false
+            nonwords: false,
         }],
         // require or disallow a space immediately following the // or /* in a comment
         'spaced-comment': ['error', 'always'],
         // enforce spacing around colons of switch statements
         'switch-colon-spacing': ['error', {
             after: true,
-            before: false
+            before: false,
         }],
         // require or disallow spacing between template tags and their literals
         'template-tag-spacing': 'error',
         // require or disallow the Unicode BOM
         'unicode-bom': ['error', 'never'],
         // require regex literals to be wrapped in parentheses
-        'wrap-regex': 'off'
-    }
+        'wrap-regex': 'off',
+    },
 };

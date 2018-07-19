@@ -1,24 +1,27 @@
 {
-  "name": "eslint-config-hope",
-  "version": "4.2.1",
-  "description": "Hope.UA ESLint config",
+  "name": "@dv/eslint-config",
+  "version": "5.0.0",
+  "description": "DeepVision ESLint config",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HopeUA/eslint-config-hope.git"
+    "url": "https://git.deepvision.team/lib/configs/eslint.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "hope.ua"
   ],
-  "author": "Sergii Sadovyi <s.sadovyi@hope.ua>",
+  "author": "Sergii Sadovyi <s.sadovyi@deepvision.team>",
   "license": "MIT",
   "scripts": {
-    "test": "npm link && npm link eslint-config-hope && npm run lint && rm -f ./node_modules/eslint-config-hope",
+    "test": "npm link && npm link eslint-config-dv && npm run lint && rm -f ./node_modules/eslint-config-hope",
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^4.0.0"
+    "eslint": "^5.0.0"
+  },
+  "dependencies": {
+    "eslint": "^5.1.0"
   }
 }
