@@ -5,10 +5,10 @@ Inspired by AirBnB ESLint config
 ESLint
 
     npm install eslint --save-dev
-    
+
 Latest version of config
 
-    npm install @bit/deep.configs._.eslint --save-dev
+    npm install @deepvision/eslint-config --save-dev
 
 Babel parser (for es6 code only)
 
@@ -19,11 +19,11 @@ Create **.eslintrc.js** file
 
     module.exports = {
         root: true,
-        extends: './node_modules/@bit/deep.configs._.eslint/index.js', // little hack until eslint support configs without "eslint-config-*"
+        extends: './node_modules/@deepvision/eslint-config/index.js', // little hack until eslint support configs without "eslint-config-*"
         parser: "babel-eslint", // for es6 code only
         ...
     }
-    
+
 In **package.json** add new script
 
     {
@@ -34,8 +34,7 @@ In **package.json** add new script
         ]
         ...
     }
-    
+
 Run lint
 
     npm run lint
-    
