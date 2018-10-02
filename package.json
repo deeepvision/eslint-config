@@ -7,15 +7,9 @@
     "type": "git",
     "url": "https://git.deepvision.team/lib/configs/eslint.git"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "deepvision"
-  ],
   "author": "Sergii Sadovyi <s.sadovyi@deepvision.team>",
   "license": "MIT",
   "scripts": {
-    "test": "npm link && npm link @deepvision/eslint-config && npm run lint",
     "lint": "eslint ."
   },
   "peerDependencies": {
