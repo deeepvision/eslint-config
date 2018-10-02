@@ -1,0 +1,21 @@
+image: node:8-alpine
+before_script:
+- node -v
+- npm -v
+- npm config set cache dev/cache
+- npm cache verify
+- npm install
+cache:
+  paths:
+  - dev/cache
+
+test:
+  script:
+  - npm run lint
+
+publish:
+  script:
+  - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+  - npm publish
+  only:
+  - tags
