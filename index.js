@@ -15,5 +15,11 @@ module.exports = {
     env: {
         browser: true,
     },
+    globals: {
+        // Jest functions
+        expect: true,
+        describe: true,
+        test: true,
+    },
     rules: {},
 };
