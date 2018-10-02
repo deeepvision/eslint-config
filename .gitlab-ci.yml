@@ -15,7 +15,8 @@ test:
 
 publish:
   script:
-  - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+  - export NPM_TOKEN=${NPM_TOKEN}
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
   - npm publish
   only:
   - tags
