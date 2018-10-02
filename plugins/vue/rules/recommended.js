@@ -5,5 +5,5 @@ module.exports = {
         'vue/no-v-html': 'error',
         'vue/order-in-components': 'error',
         'vue/this-in-template': 'error',
-    }
+    },
 };

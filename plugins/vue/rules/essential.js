@@ -32,5 +32,5 @@ module.exports = {
         'vue/valid-v-pre': 'error',
         'vue/valid-v-show': 'error',
         'vue/valid-v-text': 'error',
-    }
+    },
 };

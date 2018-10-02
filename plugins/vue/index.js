@@ -1,7 +1,7 @@
 module.exports = {
     parser: 'vue-eslint-parser',
     plugins: [
-        'vue'
+        'vue',
     ],
     extends: [
         './rules/base.js',

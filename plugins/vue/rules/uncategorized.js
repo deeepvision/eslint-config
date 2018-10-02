@@ -5,5 +5,5 @@ module.exports = {
         'vue/no-spaces-around-equal-signs-in-attribute': 'error',
         'vue/script-indent': 'off',
         'vue/singleline-html-element-content-newline': 'off',
-    }
+    },
 };
