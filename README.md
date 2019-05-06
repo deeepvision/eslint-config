@@ -11,7 +11,7 @@ Latest version of config
     npm install @deepvision/eslint-config --save-dev
 
 ## Usage
-### ES2018
+### ES2019
 Install Babel parser
 
     npm install babel-eslint --save-dev
@@ -54,6 +54,37 @@ Create **.eslintrc.js** file
         extends: [
             '@deepvision',
             '@deepvision/eslint-config/plugins/vue',
+        ],
+        ...
+    }
+
+In **package.json** add new script
+
+    {
+        ...
+        "scripts": [
+            ...
+            "lint": "eslint ."
+        ]
+        ...
+    }
+
+Run lint
+
+    npm run lint
+
+### React.js
+Install React plugin
+
+    npm install eslint-plugin-react --save-dev
+
+Create **.eslintrc.js** file
+
+    module.exports = {
+        root: true,
+        extends: [
+            '@deepvision',
+            '@deepvision/eslint-config/plugins/react',
         ],
         ...
     }
