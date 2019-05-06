@@ -1,8 +1,8 @@
 module.exports = {
     parserOptions: {
         ecmaFeatures: {
-            jsx: true
-        }
+            jsx: true,
+        },
     },
     rules: {
         // Enforce boolean attributes notation in JSX
@@ -26,7 +26,7 @@ module.exports = {
         // Restrict file extensions that may contain JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
         'react/jsx-filename-extension': ['error', {
-            extensions: ['.js']
+            extensions: ['.js'],
         }],
         // Enforce position of the first prop in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
@@ -49,12 +49,12 @@ module.exports = {
         // Limit maximum of props on a single line in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
         'react/jsx-max-props-per-line': ['error', {
-            maximum: 3
+            maximum: 3,
         }],
         // Prevent usage of .bind() and arrow functions in JSX props
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
         'react/jsx-no-bind': ['error', {
-            ignoreRefs: true
+            ignoreRefs: true,
         }],
         // Prevent comments from being inserted as text nodes
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -106,7 +106,7 @@ module.exports = {
         'react/jsx-tag-spacing': ['error', {
             closingSlash: 'never',
             beforeSelfClosing: 'never',
-            afterOpening: 'never'
+            afterOpening: 'never',
         }],
         // Prevent React to be incorrectly marked as unused
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
@@ -119,7 +119,7 @@ module.exports = {
         'react/jsx-wrap-multilines': ['error', {
             declaration: true,
             assignment: true,
-            return: true
-        }]
-    }
+            return: true,
+        }],
+    },
 };

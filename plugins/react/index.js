@@ -1,6 +1,6 @@
 module.exports = {
     plugins: [
-        'react'
+        'react',
     ],
     extends: [
         './rules/react.js',
