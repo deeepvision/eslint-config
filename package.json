@@ -1,6 +1,6 @@
 {
   "name": "@deepvision/eslint-config",
-  "version": "5.16.0",
+  "version": "5.16.1",
   "description": "DeepVision ESLint config",
   "main": "index.js",
   "repository": {
