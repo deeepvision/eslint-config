@@ -18,22 +18,14 @@ module.exports = {
         'vue/comma-dangle': 'error',
         // enforce specific casing for the component naming style in template
         'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-        // enforce consistent newlines before and after dots
-        'vue/dot-location': 'error',
         // require the use of === and !==
         'vue/eqeqeq': 'error',
         // enforce consistent spacing between keys and values in object literal properties
         'vue/key-spacing': 'error',
-        // enforce consistent spacing before and after keywords
-        'vue/keyword-spacing': 'error',
         // require component name property to match its file name
         'vue/match-component-file-name': 'error',
         // disallow boolean defaults
         'vue/no-boolean-default': 'error',
-        // disallow deprecated scope attribute (in Vue.js 2.5.0+)
-        'vue/no-deprecated-scope-attribute': 'error',
-        // disallow empty destructuring patterns
-        'vue/no-empty-pattern': 'error',
         // disallow specified syntax
         'vue/no-restricted-syntax': 'error',
         // enforce consistent spacing inside braces
