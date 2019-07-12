@@ -94,9 +94,7 @@ module.exports = {
         // disallow the omission of parentheses when invoking a constructor with no arguments
         'new-parens': 'error',
         // newline per chained method call
-        'newline-per-chained-call': ['error', {
-            ignoreChainWithDepth: 2,
-        }],
+        'newline-per-chained-call': 'off',
         // disallow use of the Array constructor
         'no-array-constructor': 'error',
         // disallow use of bitwise operators

@@ -103,3 +103,34 @@ In **package.json** add new script
 Run lint
 
     npm run lint
+
+### Typescript
+Install Typescript plugin
+
+    npm install @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+
+Create **.eslintrc.js** file
+
+    module.exports = {
+        root: true,
+        extends: [
+            '@deepvision',
+            '@deepvision/eslint-config/plugins/typescript',
+        ],
+        ...
+    }
+
+In **package.json** add new script
+
+    {
+        ...
+        "scripts": [
+            ...
+            "lint": "eslint **/*.ts"
+        ]
+        ...
+    }
+
+Run lint
+
+    npm run lint
