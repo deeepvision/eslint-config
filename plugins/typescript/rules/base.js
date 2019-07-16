@@ -71,7 +71,7 @@ module.exports = {
         // Disallow aliasing this
         '@typescript-eslint/no-this-alias': 'error',
         // Disallow the use of type aliases
-        '@typescript-eslint/no-type-alias': 'error',
+        '@typescript-eslint/no-type-alias': 'off',
         // Warns when a namespace qualifier is unnecessary
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         // Warns if a type assertion does not change the type of an expression
@@ -109,7 +109,7 @@ module.exports = {
         // Require or disallow semicolons instead of ASI
         '@typescript-eslint/semi': 'error',
         // Restricts the types allowed in boolean expressions
-        '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/strict-boolean-expressions': 'off',
         // Sets preference level for triple slash directives versus ES6-style import declarations
         '@typescript-eslint/triple-slash-reference': 'error',
         // Require consistent spacing around type annotations
