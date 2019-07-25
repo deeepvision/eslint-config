@@ -64,7 +64,7 @@ module.exports = {
         // enforce position of line comments
         'line-comment-position': 'off',
         // disallow mixed 'LF' and 'CRLF' as linebreaks
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': 'off',
         // enforces empty lines around comments
         'lines-around-comment': 'off',
         // specify the maximum depth that blocks can be nested
