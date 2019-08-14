@@ -3,7 +3,7 @@ module.exports = {
         // Require that member overloads be consecutive
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         // Requires using either T[] or Array<T> for arrays
-        '@typescript-eslint/array-type': ['error', 'generic'],
+        '@typescript-eslint/array-type': ['error', { default: 'generic' }],
         // Disallows awaiting a value that is not a Thenable
         '@typescript-eslint/await-thenable': 'error',
         // Bans “// @ts-ignore” comments from being used
