@@ -8,12 +8,14 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
         // Bans “// @ts-ignore” comments from being used
         '@typescript-eslint/ban-ts-ignore': 'error',
-        // Enforces that types will not to be used
+        // Bans specific types from being used
         '@typescript-eslint/ban-types': 'off',
         // Enforce camelCase naming convention
         '@typescript-eslint/camelcase': 'error',
         // Require PascalCased class and interface names
         '@typescript-eslint/class-name-casing': 'error',
+        // Enforces consistent usage of type assertions
+        '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
         // Consistent with type definition either interface or type
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         // Require explicit return types on functions and class methods
@@ -26,7 +28,7 @@ module.exports = {
         '@typescript-eslint/generic-type-naming': 'off',
         // Enforce consistent indentation
         '@typescript-eslint/indent': ['error', 4],
-        // Require that interface names be prefixed with I
+        // Require that interface names should or should not prefixed with `I`
         '@typescript-eslint/interface-name-prefix': 'off',
         // Require a specific member delimiter style for interfaces and type literals
         '@typescript-eslint/member-delimiter-style': 'error',
@@ -34,8 +36,6 @@ module.exports = {
         '@typescript-eslint/member-naming': 'off',
         // Require a consistent member declaration order
         '@typescript-eslint/member-ordering': 'off',
-        // Enforces the use of as Type assertions instead of <Type> assertions
-        '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
         // Disallow generic Array constructors
         '@typescript-eslint/no-array-constructor': 'error',
         // Disallow empty functions
@@ -58,12 +58,12 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'off',
         // Enforce valid definition of new and constructor
         '@typescript-eslint/no-misused-new': 'error',
+        // Avoid using promises in places not designed to handle them
+        '@typescript-eslint/no-misused-promises': 'error',
         // Disallow the use of custom TypeScript modules and namespaces
         '@typescript-eslint/no-namespace': 'error',
         // Disallows non-null assertions using the ! postfix operator
         '@typescript-eslint/no-non-null-assertion': 'error',
-        // Forbids an object literal to appear in a type assertion expression
-        '@typescript-eslint/no-object-literal-type-assertion': 'error',
         // Disallow the use of parameter properties in class constructors
         '@typescript-eslint/no-parameter-properties': 'error',
         // Disallows invocation of require()
@@ -74,6 +74,8 @@ module.exports = {
         '@typescript-eslint/no-type-alias': 'off',
         // Warns when a namespace qualifier is unnecessary
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
+        // Warns if an explicitly specified type argument is the default for that type parameter
+        '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         // Warns if a type assertion does not change the type of an expression
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         // Disallow unused variables
@@ -104,6 +106,8 @@ module.exports = {
         '@typescript-eslint/promise-function-async': 'error',
         // Enforce giving compare argument to Array#sort
         '@typescript-eslint/require-array-sort-compare': 'error',
+        // Disallow async functions which have no await expression
+        '@typescript-eslint/require-await': 'error',
         // When adding two variables, operands must both be of type number or of type string
         '@typescript-eslint/restrict-plus-operands': 'error',
         // Require or disallow semicolons instead of ASI
@@ -114,6 +118,8 @@ module.exports = {
         '@typescript-eslint/triple-slash-reference': 'error',
         // Require consistent spacing around type annotations
         '@typescript-eslint/type-annotation-spacing': 'error',
+        // Require type annotations to exist
+        '@typescript-eslint/typedef': 'error',
         // Enforces unbound methods are called with their expected scope
         '@typescript-eslint/unbound-method': 'error',
         // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
