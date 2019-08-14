@@ -102,7 +102,7 @@ module.exports = {
         'react/jsx-sort-props': 'off',
         // Validate spacing before closing bracket in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
-        'react/jsx-space-before-closing': ['error', 'never'],
+        // 'react/jsx-space-before-closing': ['error', 'never'],
         // Validate whitespace in and around the JSX opening and closing brackets
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
         'react/jsx-tag-spacing': ['error', {
