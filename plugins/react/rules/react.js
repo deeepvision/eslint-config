@@ -45,7 +45,7 @@ module.exports = {
         // Prevent problem with children and props.dangerouslySetInnerHTML
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
         'react/no-danger-with-children': 'error',
-        // Prevent usage of deprecated methods
+        // Prevent usage of deprecated methods, including component lifecycle methods
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
         'react/no-deprecated': 'error',
         // Prevent usage of setState in componentDidMount
