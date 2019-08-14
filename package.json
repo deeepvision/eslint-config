@@ -1,6 +1,6 @@
 {
   "name": "@deepvision/eslint-config",
-  "version": "6.0.3",
+  "version": "6.1.0",
   "description": "DeepVision ESLint config",
   "main": "index.js",
   "repository": {
@@ -13,14 +13,14 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "vue-eslint-parser": "^6.0.4",
-    "eslint-plugin-react": "^7.14.2",
-    "@typescript-eslint/eslint-plugin": "^1.12.0",
-    "@typescript-eslint/parser": "^1.12.0",
+    "eslint-plugin-react": "^7.14.3",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
-    "eslint": "^6.0.1"
+    "eslint": "^6.1.0"
   }
 }
