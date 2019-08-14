@@ -119,7 +119,7 @@ module.exports = {
         // Require consistent spacing around type annotations
         '@typescript-eslint/type-annotation-spacing': 'error',
         // Require type annotations to exist
-        '@typescript-eslint/typedef': 'error',
+        '@typescript-eslint/typedef': 'off',
         // Enforces unbound methods are called with their expected scope
         '@typescript-eslint/unbound-method': 'error',
         // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
