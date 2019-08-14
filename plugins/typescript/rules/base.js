@@ -17,7 +17,7 @@ module.exports = {
         // Consistent with type definition either interface or type
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         // Require explicit return types on functions and class methods
-        '@typescript-eslint/explicit-function-return-type': 'error',
+        '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
         // Require explicit accessibility modifiers on class properties and methods
         '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
         // Require or disallow spacing between function identifiers and their invocations
