@@ -5,5 +5,6 @@ module.exports = {
     ],
     extends: [
         './rules/base.js',
+        './rules/core-disable.js',
     ],
 };
