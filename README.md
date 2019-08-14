@@ -117,6 +117,9 @@ Create **.eslintrc.js** file
             '@deepvision',
             '@deepvision/eslint-config/plugins/typescript',
         ],
+        parserOptions: {
+            project: './tsconfig.json',
+        },
         ...
     }
 
@@ -126,7 +129,7 @@ In **package.json** add new script
         ...
         "scripts": [
             ...
-            "lint": "eslint **/*.ts"
+            "lint": "eslint src/**/**/*.ts tests/**/**/*.ts"
         ]
         ...
     }
