@@ -47,7 +47,7 @@ module.exports = {
         // Disallow unnecessary parentheses
         '@typescript-eslint/no-extra-parens': 'error',
         // Forbids the use of classes as namespaces
-        '@typescript-eslint/no-extraneous-class': 'error',
+        '@typescript-eslint/no-extraneous-class': 'off',
         // Requires Promise-like values to be handled appropriately.
         '@typescript-eslint/no-floating-promises': 'error',
         // Disallow iterating over an array with a for-in loop
@@ -65,7 +65,7 @@ module.exports = {
         // Disallows non-null assertions using the ! postfix operator
         '@typescript-eslint/no-non-null-assertion': 'error',
         // Disallow the use of parameter properties in class constructors
-        '@typescript-eslint/no-parameter-properties': 'error',
+        '@typescript-eslint/no-parameter-properties': 'off',
         // Disallows invocation of require()
         '@typescript-eslint/no-require-imports': 'error',
         // Disallow aliasing this
