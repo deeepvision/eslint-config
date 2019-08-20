@@ -41,6 +41,10 @@ module.exports = {
         'func-names': 'off',
         // enforces use of function declarations or expressions
         'func-style': 'off',
+        // enforce line breaks between arguments of a function call
+        'function-call-argument-newline': ['error', 'consistent'],
+        // enforce consistent line breaks inside function parentheses
+        'function-paren-newline': 'off',
         // blacklist certain identifiers to prevent them being used
         'id-blacklist': 'off',
         // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
