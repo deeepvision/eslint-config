@@ -55,9 +55,7 @@ module.exports = {
         }],
         // Prevent usage of .bind() and arrow functions in JSX props
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
-        'react/jsx-no-bind': ['error', {
-            ignoreRefs: true,
-        }],
+        'react/jsx-no-bind': 'off',
         // Prevent comments from being inserted as text nodes
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
         'react/jsx-no-comment-textnodes': 'error',
