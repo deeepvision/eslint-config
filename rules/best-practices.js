@@ -11,7 +11,7 @@ module.exports = {
         // specify the maximum cyclomatic complexity allowed in a program
         complexity: 'off',
         // require return statements to either always or never specify values
-        'consistent-return': 'error',
+        'consistent-return': 'off',
         // specify curly brace conventions for all control statements
         curly: ['error', 'all'],
         // require default case in switch statements
