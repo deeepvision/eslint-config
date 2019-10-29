@@ -40,6 +40,8 @@ module.exports = {
         'no-extra-semi': 'error',
         // disallow overwriting functions written as function declarations
         'no-func-assign': 'error',
+        // disallow assigning to imported bindings
+        'no-import-assign': 'error',
         // disallow function or variable declarations in nested blocks
         'no-inner-declarations': 'error',
         // disallow invalid regular expression strings in the RegExp constructor
@@ -67,7 +69,7 @@ module.exports = {
         // disallow negating the left operand of relational operators
         'no-unsafe-negation': 'error',
         // disallow assignments that can lead to race conditions due to usage of await or yield
-        'require-atomic-updates': 'error',
+        'require-atomic-updates': 'off',
         // disallow comparisons with the value NaN
         'use-isnan': 'error',
         // ensure JSDoc comments are valid

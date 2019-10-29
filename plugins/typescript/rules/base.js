@@ -10,6 +10,10 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 'error',
         // Bans specific types from being used
         '@typescript-eslint/ban-types': 'off',
+        // Enforce consistent brace style for blocks
+        '@typescript-eslint/brace-style': ['error', '1tbs', {
+            allowSingleLine: true,
+        }],
         // Enforce camelCase naming convention
         '@typescript-eslint/camelcase': 'error',
         // Require PascalCased class and interface names
@@ -63,7 +67,7 @@ module.exports = {
         // Disallow the use of custom TypeScript modules and namespaces
         '@typescript-eslint/no-namespace': 'error',
         // Disallows non-null assertions using the ! postfix operator
-        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         // Disallow the use of parameter properties in class constructors
         '@typescript-eslint/no-parameter-properties': 'off',
         // Disallows invocation of require()
@@ -72,6 +76,8 @@ module.exports = {
         '@typescript-eslint/no-this-alias': 'error',
         // Disallow the use of type aliases
         '@typescript-eslint/no-type-alias': 'off',
+        // Condition expressions must be necessary
+        '@typescript-eslint/no-unnecessary-condition': 'error',
         // Warns when a namespace qualifier is unnecessary
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         // Warns if an explicitly specified type argument is the default for that type parameter
@@ -104,6 +110,8 @@ module.exports = {
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         // Requires any function or method that returns a Promise to be marked async
         '@typescript-eslint/promise-function-async': 'error',
+        // Enforce the consistent use of either backticks, double, or single quotes
+        '@typescript-eslint/quotes': ['error', 'single'],
         // Enforce giving compare argument to Array#sort
         '@typescript-eslint/require-array-sort-compare': 'error',
         // Disallow async functions which have no await expression

@@ -71,6 +71,9 @@ module.exports = {
         // Disallow undeclared variables in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
         'react/jsx-no-undef': 'error',
+        // Disallow unnecessary fragments
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
+        'react/jsx-no-useless-fragment': 'error',
         // One JSX Element Per Line
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md
         'react/jsx-one-expression-per-line': 'off',
