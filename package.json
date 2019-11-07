@@ -16,9 +16,9 @@
     "eslint": "^6.6.0",
     "vue-eslint-parser": "^6.0.4",
     "eslint-plugin-react": "^7.16.0",
-    "@typescript-eslint/eslint-plugin": "^2.6.0",
-    "@typescript-eslint/parser": "^2.6.0",
-    "typescript": "^3.6.4"
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
     "eslint": "^6.6.0"
