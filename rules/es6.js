@@ -47,12 +47,7 @@ module.exports = {
         // suggest using of const declaration for variables that are never modified after declared
         'prefer-const': 'error',
         // require destructuring from arrays and/or objects
-        'prefer-destructuring': ['error', {
-            'array': true,
-            'object': true,
-        }, {
-            'enforceForRenamedProperties': false,
-        }],
+        'prefer-destructuring': 'off',
         // disallow parseInt() in favor of binary, octal, and hexadecimal literals
         'prefer-numeric-literals': 'error',
         // suggest using the rest parameters instead of arguments
@@ -60,7 +55,7 @@ module.exports = {
         // suggest using the spread operator instead of .apply()
         'prefer-spread': 'error',
         // suggest using template literals instead of strings concatenation
-        'prefer-template': 'error',
+        'prefer-template': 'off',
         // disallow generator functions that do not have yield
         'require-yield': 'error',
         //  enforce spacing between rest and spread operators and their expressions
