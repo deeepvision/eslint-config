@@ -41,7 +41,7 @@ module.exports = {
         // disallow overwriting functions written as function declarations
         'no-func-assign': 'error',
         // disallow assigning to imported bindings
-        'no-import-assign': 'error',
+        'no-import-assign': 'off',
         // disallow function or variable declarations in nested blocks
         'no-inner-declarations': 'error',
         // disallow invalid regular expression strings in the RegExp constructor

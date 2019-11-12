@@ -42,7 +42,7 @@ module.exports = {
         // enforces use of function declarations or expressions
         'func-style': 'off',
         // enforce line breaks between arguments of a function call
-        'function-call-argument-newline': ['error', 'consistent'],
+        'function-call-argument-newline': 'off',
         // enforce consistent line breaks inside function parentheses
         'function-paren-newline': 'off',
         // blacklist certain identifiers to prevent them being used

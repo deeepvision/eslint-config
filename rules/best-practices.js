@@ -17,7 +17,7 @@ module.exports = {
         // require default case in switch statements
         'default-case': 'error',
         // enforce default parameters to be last
-        'default-param-last': 'error',
+        'default-param-last': 'off',
         // enforces consistent newlines before or after dots
         'dot-location': ['error', 'property'],
         // encourages use of dot notation whenever possible
@@ -141,7 +141,7 @@ module.exports = {
             allowEmptyReject: true,
         }],
         // disallow use of the RegExp constructor in favor of regular expression literals
-        'prefer-regex-literals': 'error',
+        'prefer-regex-literals': 'off',
         // require use of the second argument for parseInt()
         radix: 'error',
         // disallow async functions which have no await expression
