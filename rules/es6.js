@@ -47,16 +47,16 @@ module.exports = {
         // suggest using of const declaration for variables that are never modified after declared
         'prefer-const': 'error',
         // require destructuring from arrays and/or objects
-        "prefer-destructuring": ["error", {
-            "VariableDeclarator": {
-                "array": true,
-                "object": true
+        'prefer-destructuring': ['error', {
+            'VariableDeclarator': {
+                'array': true,
+                'object': true,
             },
-            "AssignmentExpression": {
-                "array": false,
-                "object": false
-            }
-        },
+            'AssignmentExpression': {
+                'array': false,
+                'object': false,
+            },
+        }],
         // disallow parseInt() in favor of binary, octal, and hexadecimal literals
         'prefer-numeric-literals': 'error',
         // suggest using the rest parameters instead of arguments
