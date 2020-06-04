@@ -6,18 +6,12 @@ module.exports = {
         '@typescript-eslint/array-type': ['error', { default: 'generic' }],
         // Disallows awaiting a value that is not a Thenable
         '@typescript-eslint/await-thenable': 'error',
-        // Bans “// @ts-ignore” comments from being used
-        '@typescript-eslint/ban-ts-ignore': 'error',
         // Bans specific types from being used
         '@typescript-eslint/ban-types': 'off',
         // Enforce consistent brace style for blocks
         '@typescript-eslint/brace-style': ['error', '1tbs', {
             allowSingleLine: true,
         }],
-        // Enforce camelCase naming convention
-        '@typescript-eslint/camelcase': 'error',
-        // Require PascalCased class and interface names
-        '@typescript-eslint/class-name-casing': 'error',
         // Enforces consistent usage of type assertions
         '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'angle-bracket' }],
         // Consistent with type definition either interface or type
