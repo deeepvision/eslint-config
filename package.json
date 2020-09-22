@@ -1,5 +1,5 @@
 {
-  "name": "@deepvision/eslint-config",
+  "name": "@deeepvision/eslint-config",
   "version": "6.6.7",
   "description": "DeepVision ESLint config",
   "main": "index.js",
