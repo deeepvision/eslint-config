@@ -5,7 +5,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://git.deepvision.team/lib/configs/eslint.git"
+    "url": "https://github.com/deeepvision/eslint-config"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "Sergii Sadovyi <s.sadovyi@deepvision.team>",
   "license": "MIT",
